@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Code Analyzer</title>
+
+  <link rel="stylesheet" href="static.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>⚡ AI Code Analyzer</h2>
+
+    <div class="actions">
+  <label class="upload-btn">
+  <span>📂</span>
+  <span>Upload File</span>
+  <input type="file" id="fileInput" hidden>
+</label>
+
+  <button class="analyze-btn" onclick="analyze()">
+  <span>🚀</span>
+  <span>Analyze Code</span>
+</button>
+
+  <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</div>
+  </div>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader hidden">Analyzing...</div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- EDITOR -->
+    <div class="editor-section">
+      <div class="section-title">🧠 Code Editor</div>
+      <div id="editor"></div>
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="output-section">
+      <div class="section-title">📊 Results</div>
+
+      <!-- SCORE BAR -->
+      <div id="scoreBar">
+        <div id="scoreFill"></div>
+      </div>
+
+      <button class="copy-btn" onclick="copyOutput()">📋 Copy</button>
+
+      <pre id="output">Run analysis...</pre>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

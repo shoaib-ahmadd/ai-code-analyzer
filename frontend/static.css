@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* BUTTONS */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    background: #1e293b;
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+
+    transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+.analyze-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    transition: all 0.2s ease;
+}
+
+.analyze-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* EDITOR */
+.editor-section {
+    flex: 2;
+    padding: 10px;
+}
+
+#editor {
+    height: 95%;
+    border-radius: 8px;
+}
+
+/* OUTPUT */
+.output-section {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #1e293b;
+}
+
+.section-title {
+    margin-bottom: 8px;
+    color: #94a3b8;
+}
+
+/* SCORE BAR */
+#scoreBar {
+    height: 8px;
+    background: #1e293b;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#scoreFill {
+    height: 100%;
+    width: 0%;
+    background: #22c55e;
+    border-radius: 6px;
+}
+
+/* OUTPUT BOX */
+pre {
+    background: #020617;
+    padding: 10px;
+    border-radius: 8px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+/* COPY BUTTON */
+.copy-btn {
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+/* LOADER */
+.loader {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: #38bdf8;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+/* THEME BUTTON */
+.theme-btn {
+    background: #1e293b;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+/* LIGHT MODE */
+.light {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.light .navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.light .upload-btn {
+    background: #e2e8f0;
+    color: black;
+}
+
+.light .analyze-btn {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.light pre {
+    background: #ffffff;
+    color: black;
+}
+
+.light #scoreBar {
+    background: #e2e8f0;
+}
+
+.light #editor {
+    border: 1px solid #cbd5f5;
+}
