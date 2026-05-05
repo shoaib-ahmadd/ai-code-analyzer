@@ -11,7 +11,7 @@
 
 ---
 
-## 💡 About Project
+##  About Project
 
 AI Code Analyzer is a full-stack web application that analyzes code quality and provides intelligent improvement suggestions.
 
@@ -19,7 +19,7 @@ It combines static analysis with AI assistance to help developers write cleaner 
 
 ---
 
-## 🎯 Why this project?
+##  Why this project?
 
 This project acts as a lightweight code review assistant by combining:
 - Static code analysis (Pylint-style logic)
@@ -28,7 +28,7 @@ This project acts as a lightweight code review assistant by combining:
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This tool allows users to write or upload code and get:
 
