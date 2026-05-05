@@ -1,88 +1,101 @@
 # AI Code Analyzer
 
-A web-based tool to analyze code quality, detect issues, and suggest improvements using an AI-assisted backend.  
-It combines a clean code editor UI with a FastAPI backend to provide quick and practical feedback.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![JavaScript](https://img.shields.io/badge/Frontend-JavaScript-yellow)
+![Status](https://img.shields.io/badge/Status-Live-success)
+![License](https://img.shields.io/badge/License-MIT-purple)
+
+🔗 **Live Demo:** https://ai-code-analyzer-shoaib.netlify.app  
+📘 **API Docs:** https://ai-code-analyzer-gdt2.onrender.com/docs  
 
 ---
 
-## 🚀 Live Demo
+## 💡 About Project
 
-Frontend:  
-https://ai-code-analyzer-shoaib.netlify.app  
+AI Code Analyzer is a full-stack web application that analyzes code quality and provides intelligent improvement suggestions.
 
-Backend API Docs:  
-https://ai-code-analyzer-gdt2.onrender.com/docs  
+It combines static analysis with AI assistance to help developers write cleaner and more efficient code.
+
+---
+
+## 🎯 Why this project?
+
+This project acts as a lightweight code review assistant by combining:
+- Static code analysis (Pylint-style logic)
+- AI-based suggestions
+- Real-time feedback system
 
 ---
 
 ## 📌 Overview
 
-This project allows users to write or upload code and get:
+This tool allows users to write or upload code and get:
 
 - Code quality score  
 - Identified issues  
-- Improvement suggestions  
-
-It works like a lightweight code review assistant.
+- AI-powered improvement suggestions  
 
 ---
 
 ## ✨ Features
 
-- Interactive code editor (Monaco)
-- File upload support
-- AI-based code analysis
-- Score visualization with issue breakdown
-- Clean and responsive UI
-- FastAPI backend with structured responses
+- 🧑‍💻 Interactive Monaco Editor (VS Code-like)
+- 📂 File upload support
+- 🤖 AI-based code analysis
+- 📊 Score visualization with issue breakdown
+- 🎨 Clean and responsive UI
+- ⚡ FastAPI backend with structured responses
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-Frontend  
-- HTML, CSS, JavaScript  
-- Monaco Editor  
+### Frontend
+- HTML, CSS, JavaScript
+- Monaco Editor
 
-Backend  
-- Python  
-- FastAPI  
-- Uvicorn  
+### Backend
+- Python
+- FastAPI
+- Uvicorn
 
-Deployment  
-- Netlify (Frontend)  
-- Render (Backend)  
-
----
-
-## 📁 Project Structure
-
-ai-code-analyzer/  
-│  
-├── backend/  
-│   ├── main.py  
-│   ├── analyzer.py  
-│   └── requirements.txt  
-│  
-├── frontend/  
-│   ├── index.html  
-│   ├── style.css  
-│   └── app.js  
-│  
-├── screenshots/  
-│   ├── AI1.png  
-│   └── AI2.png  
-│  
-└── README.md  
+### Deployment
+- Netlify (Frontend)
+- Render (Backend)
 
 ---
 
-## 🖼️ Screenshots
+## 📂 Project Structure
 
-### Code Editor with Analysis Output  
+```
+ai-code-analyzer/
+│
+├── backend/
+│   ├── main.py
+│   ├── analyzer.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── index.html
+│   ├── static.css
+│   └── app.js
+│
+├── screenshots/
+│   ├── AI1.png
+│   └── AI2.png
+│
+└── README.md
+```
+
+---
+
+## 📸 Screenshots
+
+### 🧑‍💻 Code Editor with Analysis Output
 ![Screenshot](./screenshots/AI1.png)
 
-### Clean Editor View  
+### 📝 Clean Editor View
 ![Screenshot](./screenshots/AI2.png)
 
 ---
@@ -99,64 +112,66 @@ ai-code-analyzer/
 
 ## 🔌 API Endpoint
 
-POST /analyze  
+**POST /analyze**
 
-Request:
+### Request
+```json
 {
   "code": "your code here",
   "language": "python"
 }
+```
 
-Response:
+### Response
+```json
 {
   "score": 6.5,
   "issues": [],
   "suggestions": "..."
 }
+```
 
 ---
 
 ## 💻 Setup (Local)
 
-Backend:
-cd backend  
-pip install -r requirements.txt  
-uvicorn main:app --host 0.0.0.0 --port 10000  
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 10000
+```
 
-Frontend:  
-Open index.html in browser (or use Live Server)
+### Frontend
+Open `frontend/index.html` in browser (or use Live Server)
 
 ---
 
 ## 🧠 Notes
 
-- CORS is enabled for frontend-backend communication  
+- CORS enabled for frontend-backend communication  
 - Render free tier may cause slight delay (cold start)  
 - Frontend is static and connects to deployed API  
 
 ---
 
-## 🔮 Future Improvements
+## 🚀 Future Improvements
 
 - Multi-language support  
-- Better scoring algorithm  
-- Authentication system  
+- Improved scoring algorithm  
+- User authentication system  
 - Save analysis history  
-- UI enhancements  
+- UI/UX enhancements  
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
-Shoaib Ahmad  
-https://github.com/shoaib-ahmadd  
+**Shoaib Ahmad**  
+🔗 https://github.com/shoaib-ahmadd  
 
 ---
 
-## 📄 License
+## ⭐ Support
 
-Open-source project for learning and demonstration purposes.
-
-## Support
-
-If you found this project useful, consider starring this repository.
+If you found this project useful, consider giving it a ⭐ on GitHub!
