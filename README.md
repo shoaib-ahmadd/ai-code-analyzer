@@ -156,3 +156,7 @@ https://github.com/shoaib-ahmadd
 ## 📄 License
 
 Open-source project for learning and demonstration purposes.
+
+## Support
+
+If you found this project useful, consider starring this repository.
